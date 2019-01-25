@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Numerics;
 
 namespace Pt2Assignment2
 {
@@ -9,25 +8,25 @@ namespace Pt2Assignment2
         {
             var input = Console.ReadLine();
             if (input == null) return;
-            var n = BigInteger.Parse(input);
-            n = Fibonacci(n);
-            Console.WriteLine((n % 10));
+            var n = ulong.Parse(input);
+            n = FibonacciLastDigit(n);
+            Console.WriteLine(n);
         }
 
-        private static BigInteger Fibonacci(BigInteger n)
+        private static ulong FibonacciLastDigit(ulong n)
         {
             if(n <= 1)
             {
                 return n;
             }
 
-            BigInteger a = 0, b = 1;
+            ulong a = 0, b = 1;
 
-            for (var i = 2; i <= n; i++)
+            for (uint i = 2; i <= n; i++)
             {
                 var temp = a + b;
-                a = b;
-                b = temp;
+                a = b % 10;
+                b = temp % 10;
             }
 
             return b;
