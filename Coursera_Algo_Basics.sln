@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pt3Assignment2", "Pt3Assign
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pt3Assignment4", "Pt3Assignment4\Pt3Assignment4.csproj", "{5E1C6658-A4B5-4B7F-86C3-875510A05507}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pt4Assignment1", "Pt4Assignment1\Pt4Assignment1.csproj", "{3CA5E939-04B3-4415-944B-D914338E6010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{5E1C6658-A4B5-4B7F-86C3-875510A05507}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E1C6658-A4B5-4B7F-86C3-875510A05507}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E1C6658-A4B5-4B7F-86C3-875510A05507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA5E939-04B3-4415-944B-D914338E6010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA5E939-04B3-4415-944B-D914338E6010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA5E939-04B3-4415-944B-D914338E6010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA5E939-04B3-4415-944B-D914338E6010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
