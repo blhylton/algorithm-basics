@@ -22,23 +22,21 @@ namespace Pt4Assignment2
             
             Array.Sort(arr);
             
-            Console.WriteLine(FindMajority());
+            Console.WriteLine(FindMajority(arr, n));
+        }
 
-            int FindMajority()
+        private static int FindMajority(long[] arr, long n)
+        {
+            for (var i = 0; i < (long) Math.Ceiling((double) n / 2); i++)
             {
-                for (var i = 0; i < (long) Math.Ceiling((double) n / 2); i++)
+                var j = (long) Math.Floor((double) n / 2) + i;
+                if (arr[i] == arr[j])
                 {
-                    var j = (long) Math.Floor((double) n / 2) + i;
-                    if (arr[i] == arr[j])
-                    {
-                        return 1;
-                    }
+                    return 1;
                 }
-
-                return 0;
             }
 
-            
+            return 0;
         }
     }
 }
